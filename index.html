@@ -1,76 +1,118 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tam Vakit - Gizlilik Politikası</title>
-<style>
-body { 
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; 
-  max-width: 800px; 
-  margin: 40px auto; 
-  line-height: 1.7; 
-  padding: 20px; 
-  color: #222;
-}
-h1, h2 { color: #0d1b2a; }
-</style>
-</head>
-<body>
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tam Vakit — Gizlilik / Privacy</title><style>body{font:17px/1.65 system-ui,sans-serif;color:#202532;background:#f7f8fb;margin:0}main{max-width:820px;margin:auto;padding:32px 22px}nav{display:flex;gap:18px;flex-wrap:wrap}a{color:#006c86}section{margin:32px 0;padding:24px;background:white;border:1px solid #e1e5ec;border-radius:12px;scroll-margin-top:20px}.policy{white-space:pre-wrap;overflow-wrap:anywhere}h1,h2{line-height:1.25}</style></head><body><main><h1>Tam Vakit</h1><nav aria-label="Languages"><a href="#tr">Türkçe</a><a href="#en">English</a><a href="#ar">العربية</a><a href="#id">Bahasa Indonesia</a></nav><section id="tr" lang="tr" dir="ltr"><h2>Türkçe</h2><div class="policy">Tam Vakit — Gizlilik Politikası
+Son güncelleme: 20 Kasım 2026
 
-<h1>Gizlilik Politikası</h1>
+1. Uygulama ve kapsam
+Tam Vakit ücretsiz bir namaz vakti ve ibadet yardımcı uygulamasıdır. Hesap oluşturmanız istenmez. Bu sürümde uygulamaya eklenmiş reklam, kullanıcı takibi veya analiz SDK&#x27;sı bulunmaz.
 
-<p><strong>Son Güncelleme:</strong> 23 Mart 2026</p>
+2. Konum ve çevrimiçi servisler
+İzninizle cihazınızın yaklaşık veya hassas konumu, namaz vakitleri, kıble yönü ve yakındaki camiler için kullanılır. Elle seçtiğiniz şehir ve koordinatlar da aynı amaçlarla kullanılabilir. Uygulama sürekli arka plan konum takibi yapmaz.
 
-<p>
-Tam Vakit – Namaz Vakitleri uygulaması kullanıcı gizliliğine önem verir. 
-Bu uygulama kişisel verilerinizi satmaz, kiralamaz veya üçüncü taraflarla paylaşmaz.
-</p>
+Konum yalnızca cihazda işlenmez: namaz vakti ve imsakiye isteklerinde koordinatlar AlAdhan&#x27;a (api.aladhan.com); cami aramalarında arama merkezi ve yarıçap Overpass sunucularına (ovp.dresel.systems, overpass-api.de, overpass.private.coffee) gönderilir. Şehir/adres arama metni veya ters konum sorgusundaki koordinatlar Nominatim&#x27;e (nominatim.openstreetmap.org) gönderilebilir. Cihazın adres çözümleme hizmetleri de kullanılabilir.
 
-<h2>Toplanan Veriler</h2>
+Harita görüntülenirken harita karelerinin konumları OpenStreetMap&#x27;e; seçtiğiniz katmana göre OpenTopoMap veya Esri/ArcGIS&#x27;e gönderilir. Bu istekler görüntülediğiniz bölgeyi gösterebilir. Kıble yönü cihaz sensörleri ve koordinatlar kullanılarak hesaplanır.
 
-<h3>1. Konum Bilgisi</h3>
-<p>
-Kıble bulma ve cami bulma özelliklerinin çalışabilmesi için cihazın konum bilgisi kullanılabilir.
-Konum verisi yalnızca uygulama açıkken kullanılır.
-Bu veriler sunuculara gönderilmez ve kalıcı olarak saklanmaz.
-</p>
+Bu servisler ağ isteği sırasında IP adresinizi ve temel bağlantı bilgilerini görebilir. Servislerin kendi günlük ve saklama politikaları geçerlidir; onların verileri hiç saklamadığına dair bir taahhütte bulunmuyoruz. Ağ istekleri HTTPS üzerinden yapılır. Tam Vakit, kullanıcı hesabı veya kendi sunucusunda merkezi bir konum geçmişi oluşturmaz.
 
-<h3>2. Bildirim İzni</h3>
-<p>
-Namaz vakti bildirimlerini gönderebilmek için kullanıcıdan bildirim izni istenir.
-Bildirimler yalnızca kullanıcının belirlediği ayarlara göre gönderilir.
-</p>
+3. Cihazda tutulan bilgiler
+Dil, tema, seçili şehir ve koordinatlar, favori şehirler, bildirim tercihleri, vakit ve cami önbelleği, zikir sayaçları ve namaz/kaza kayıtları cihazda saklanabilir. Ana ekran widget&#x27;ları için gereken vakit ve şehir bilgileri cihazdaki uygulama/widget alanında paylaşılır. Zekât hesabına yazdığınız tutarlar cihazda hesaplanır; uygulama bunları sunucuya göndermez. İbadet kayıtları ve zikir sayaçları da çevrimiçi servislere gönderilmez.
 
-<h2>Veri Saklama ve Silme</h2>
-<p>
-Uygulama herhangi bir kişisel veriyi sunucularda saklamaz.
-Konum verileri cihaz üzerinde anlık olarak kullanılır ve depolanmaz.
-Kullanıcı uygulamayı cihazından kaldırdığında uygulama ile ilişkili tüm veriler silinir.
-</p>
+4. Bildirimler ve dış uygulamalar
+Hatırlatmalar cihazda planlanan yerel bildirimlerdir. Uygulama, bildirim göndermek için kendi uzak bildirim sunucusunu kullanmaz. Android&#x27;deki isteğe bağlı sessize alma özelliği ayrıca Rahatsız Etmeyin erişimi ister.
 
-<h2>Veri Paylaşımı</h2>
-<p>
-Uygulama kullanıcı verilerini üçüncü taraflarla paylaşmaz.
-</p>
+Yol tarifi veya paylaşma seçeneğini kullanırsanız seçtiğiniz hedef, koordinat veya paylaşım metni Apple Maps, Google Maps, WhatsApp ya da seçtiğiniz uygulamaya aktarılabilir. Bu uygulamaların gizlilik politikaları geçerlidir.
 
-<h2>Reklam ve Analitik</h2>
-<p>
-Uygulama şu anda reklam, üçüncü taraf analiz araçları veya izleme teknolojileri kullanmamaktadır.
-İlerleyen sürümlerde reklam hizmetleri (örneğin Google AdMob) entegre edilmesi durumunda,
-gerekli gizlilik güncellemeleri bu sayfada yayınlanacaktır.
-</p>
+5. Seçimleriniz ve silme
+Konum ve bildirim izinlerini cihaz ayarlarından değiştirebilir, konum yerine elle şehir seçebilirsiniz. Uygulama verilerini cihaz ayarlarından temizleyebilir veya uygulamayı kaldırabilirsiniz. İşletim sisteminin yedekleme/geri yükleme ayarları bazı yerel verileri koruyabilir ya da geri getirebilir; bunları Apple/Google hesap ve cihaz ayarlarından yönetebilirsiniz. Üçüncü taraf servislerin kayıtlarına ilişkin talepler ilgili sağlayıcıya yöneltilmelidir.
 
-<h2>Çocukların Gizliliği</h2>
-<p>
-Uygulama 13 yaş altındaki çocuklara özel olarak hedeflenmemiştir.
-</p>
+6. Çocuklar ve destek
+Uygulama yaş veya çocuklara özel profil bilgisi istemez. Konum ve ağ istekleri yukarıdaki şekilde çalışır. Bize e-posta gönderirseniz adresiniz ve iletiniz yalnızca destek talebinize yanıt vermek için işlenir.
 
-<h2>İletişim</h2>
-<p>
-Gizlilik politikası ile ilgili sorularınız için bizimle iletişime geçebilirsiniz:
-</p>
-<p>Email: destek@tamvakit.app</p>
+Gizlilik, yerel veriler ve destek için: tamvakit.app@gmail.com</div></section><section id="en" lang="en" dir="ltr"><h2>English</h2><div class="policy">Tam Vakit — Privacy Policy
+Last updated: November 20, 2026
 
-</body>
-</html>
+1. App and scope
+Tam Vakit is a free prayer-time and worship companion app. No account registration is required. This version contains no integrated advertising, user-tracking or analytics SDK.
+
+2. Location and online services
+With your permission, approximate or precise device location is used for prayer times, Qibla direction and nearby mosques. A manually selected city and its coordinates may be used for the same purposes. The app does not continuously track location in the background.
+
+Location is not processed exclusively on your device: prayer-time and Ramadan timetable requests send coordinates to AlAdhan (api.aladhan.com); mosque searches send the search center and radius to Overpass servers (ovp.dresel.systems, overpass-api.de, overpass.private.coffee). City/address search text or reverse-geocoding coordinates may be sent to Nominatim (nominatim.openstreetmap.org). Device geocoding services may also be used.
+
+Displaying a map sends map-tile locations to OpenStreetMap or, depending on the selected layer, OpenTopoMap or Esri/ArcGIS. These requests can reveal the area you are viewing. Qibla direction is calculated using device sensors and coordinates.
+
+These services can see your IP address and basic connection information when handling requests. Their own logging and retention policies apply; we do not promise that they never retain data. Network requests use HTTPS. Tam Vakit does not create a user account or a centralized location history on its own server.
+
+3. Information on your device
+Language, theme, selected city and coordinates, favorite cities, notification preferences, prayer-time and mosque caches, dhikr counters and prayer/missed-prayer records may be stored on your device. Times and city information needed by home-screen widgets are shared within the device&#x27;s app/widget storage. Zakat amounts are calculated on your device and are not sent to a server by the app. Worship records and dhikr counters are not sent to online services.
+
+4. Notifications and external apps
+Reminders are local notifications scheduled on your device. The app does not use its own remote notification server. The optional Android silencing feature separately requests Do Not Disturb access.
+
+If you choose directions or sharing, the selected destination, coordinates or shared text may be passed to Apple Maps, Google Maps, WhatsApp or another app you select. Those apps&#x27; privacy policies apply.
+
+5. Your choices and deletion
+You can change location and notification permissions in device settings and select a city manually instead of using device location. You can clear app data in device settings or uninstall the app. Operating-system backup/restore settings may retain or restore some local data; manage these through your Apple/Google account and device settings. Requests about third-party service logs should be directed to the relevant provider.
+
+6. Children and support
+The app does not request age or child-specific profile information. Location and network requests operate as described above. If you email us, your address and message are processed only to respond to your support request.
+
+Privacy, local data and support: tamvakit.app@gmail.com</div></section><section id="ar" lang="ar" dir="rtl"><h2>العربية</h2><div class="policy">Tam Vakit — سياسة الخصوصية
+آخر تحديث: 20 نوفمبر 2026
+
+1. التطبيق ونطاق السياسة
+Tam Vakit تطبيق مجاني لأوقات الصلاة والمساعدة على العبادة. لا يتطلب إنشاء حساب. لا يتضمن هذا الإصدار حزمًا مدمجة للإعلانات أو تتبع المستخدم أو التحليلات.
+
+2. الموقع والخدمات عبر الإنترنت
+بعد إذنك، يُستخدم موقع الجهاز التقريبي أو الدقيق لأوقات الصلاة واتجاه القبلة والمساجد القريبة. ويمكن استخدام المدينة التي تختارها يدويًا وإحداثياتها للأغراض نفسها. لا يتتبع التطبيق موقعك باستمرار في الخلفية.
+
+لا تقتصر معالجة الموقع على الجهاز: تُرسل الإحداثيات إلى AlAdhan ‏(api.aladhan.com) لجلب أوقات الصلاة وإمساكية رمضان، ويُرسل مركز البحث ونطاقه إلى خوادم Overpass ‏(ovp.dresel.systems، overpass-api.de، overpass.private.coffee) للبحث عن المساجد. وقد يُرسل نص البحث عن مدينة أو عنوان، أو إحداثيات البحث العكسي، إلى Nominatim ‏(nominatim.openstreetmap.org). وقد تُستخدم أيضًا خدمات الجهاز لتحويل العناوين والإحداثيات.
+
+عند عرض الخريطة، تُرسل مواقع مربعات الخريطة إلى OpenStreetMap، أو إلى OpenTopoMap أو Esri/ArcGIS حسب الطبقة المختارة. وقد تكشف هذه الطلبات المنطقة المعروضة. يُحسب اتجاه القبلة باستخدام مستشعرات الجهاز والإحداثيات.
+
+يمكن لهذه الخدمات الاطلاع على عنوان IP ومعلومات الاتصال الأساسية عند معالجة الطلبات. وتسري سياسات التسجيل والاحتفاظ الخاصة بها؛ ولا نتعهد بأنها لا تحتفظ بأي بيانات. تُرسل طلبات الشبكة عبر HTTPS. لا ينشئ Tam Vakit حساب مستخدم أو سجلًا مركزيًا للمواقع على خادم خاص به.
+
+3. المعلومات المحفوظة على الجهاز
+قد تُحفظ اللغة والمظهر والمدينة المختارة وإحداثياتها والمدن المفضلة وتفضيلات الإشعارات وذاكرة أوقات الصلاة والمساجد المؤقتة وعدادات الذكر وسجلات الصلاة والقضاء على جهازك. تُشارك الأوقات والمدينة اللازمة لودجات الشاشة الرئيسية ضمن مساحة التطبيق والودجت على الجهاز. تُحسب مبالغ الزكاة على الجهاز ولا يرسلها التطبيق إلى خادم. ولا تُرسل سجلات العبادة وعدادات الذكر إلى الخدمات عبر الإنترنت.
+
+4. الإشعارات والتطبيقات الخارجية
+التذكيرات إشعارات محلية مجدولة على جهازك. لا يستخدم التطبيق خادم إشعارات عن بُعد خاصًا به. وتطلب ميزة كتم الصوت الاختيارية على Android إذن «عدم الإزعاج» بصورة منفصلة.
+
+إذا اخترت الاتجاهات أو المشاركة، فقد تُنقل الوجهة أو الإحداثيات أو النص المختار إلى Apple Maps أو Google Maps أو WhatsApp أو التطبيق الذي تختاره. وتسري سياسات الخصوصية الخاصة بهذه التطبيقات.
+
+5. خياراتك والحذف
+يمكنك تغيير أذونات الموقع والإشعارات من إعدادات الجهاز واختيار مدينة يدويًا بدل موقع الجهاز. ويمكنك مسح بيانات التطبيق من إعدادات الجهاز أو إلغاء تثبيته. قد تحتفظ إعدادات النسخ الاحتياطي والاستعادة في النظام ببعض البيانات المحلية أو تعيدها؛ وتُدار عبر حساب Apple أو Google وإعدادات الجهاز. تُوجّه الطلبات المتعلقة بسجلات خدمات الأطراف الثالثة إلى المزوّد المعني.
+
+6. الأطفال والدعم
+لا يطلب التطبيق العمر أو معلومات ملف شخصي خاصة بالأطفال. تعمل طلبات الموقع والشبكة وفق الوصف أعلاه. إذا راسلتنا بالبريد، فستُعالج رسالتك وعنوانك للرد على طلب الدعم فقط.
+
+للخصوصية والبيانات المحلية والدعم: tamvakit.app@gmail.com</div></section><section id="id" lang="id" dir="ltr"><h2>Bahasa Indonesia</h2><div class="policy">Tam Vakit — Kebijakan Privasi
+Terakhir diperbarui: 20 November 2026
+
+1. Aplikasi dan cakupan
+Tam Vakit adalah aplikasi gratis untuk waktu salat dan pendamping ibadah. Pendaftaran akun tidak diperlukan. Versi ini tidak menyertakan SDK iklan, pelacakan pengguna, atau analitik.
+
+2. Lokasi dan layanan daring
+Dengan izin Anda, lokasi perangkat yang perkiraan atau presisi digunakan untuk waktu salat, arah kiblat, dan masjid terdekat. Kota yang dipilih secara manual beserta koordinatnya juga dapat digunakan untuk tujuan yang sama. Aplikasi tidak melacak lokasi secara terus-menerus di latar belakang.
+
+Lokasi tidak hanya diproses pada perangkat: permintaan waktu salat dan jadwal Ramadan mengirim koordinat ke AlAdhan (api.aladhan.com); pencarian masjid mengirim pusat dan radius pencarian ke server Overpass (ovp.dresel.systems, overpass-api.de, overpass.private.coffee). Teks pencarian kota/alamat atau koordinat pencarian alamat terbalik dapat dikirim ke Nominatim (nominatim.openstreetmap.org). Layanan geokode perangkat juga dapat digunakan.
+
+Saat peta ditampilkan, lokasi ubin peta dikirim ke OpenStreetMap atau, sesuai lapisan yang dipilih, ke OpenTopoMap atau Esri/ArcGIS. Permintaan ini dapat menunjukkan wilayah yang Anda lihat. Arah kiblat dihitung menggunakan sensor perangkat dan koordinat.
+
+Layanan tersebut dapat melihat alamat IP dan informasi koneksi dasar ketika memproses permintaan. Kebijakan pencatatan dan penyimpanan masing-masing penyedia berlaku; kami tidak menjanjikan bahwa mereka tidak pernah menyimpan data. Permintaan jaringan menggunakan HTTPS. Tam Vakit tidak membuat akun pengguna atau riwayat lokasi terpusat di server sendiri.
+
+3. Informasi pada perangkat
+Bahasa, tema, kota dan koordinat yang dipilih, kota favorit, preferensi notifikasi, cache waktu salat dan masjid, penghitung zikir, serta catatan salat/qada dapat disimpan pada perangkat. Waktu dan informasi kota untuk widget layar utama dibagikan dalam penyimpanan aplikasi/widget pada perangkat. Jumlah zakat dihitung pada perangkat dan tidak dikirim ke server oleh aplikasi. Catatan ibadah dan penghitung zikir tidak dikirim ke layanan daring.
+
+4. Notifikasi dan aplikasi luar
+Pengingat adalah notifikasi lokal yang dijadwalkan pada perangkat. Aplikasi tidak menggunakan server notifikasi jarak jauh sendiri. Fitur senyap opsional di Android meminta akses Jangan Ganggu secara terpisah.
+
+Jika Anda memilih petunjuk arah atau berbagi, tujuan, koordinat, atau teks yang dipilih dapat diteruskan ke Apple Maps, Google Maps, WhatsApp, atau aplikasi pilihan Anda. Kebijakan privasi aplikasi tersebut berlaku.
+
+5. Pilihan dan penghapusan
+Anda dapat mengubah izin lokasi dan notifikasi melalui pengaturan perangkat serta memilih kota secara manual sebagai pengganti lokasi perangkat. Anda dapat menghapus data aplikasi melalui pengaturan perangkat atau mencopot pemasangannya. Pengaturan pencadangan/pemulihan sistem dapat menyimpan atau memulihkan sebagian data lokal; kelola melalui akun Apple/Google dan pengaturan perangkat. Permintaan terkait catatan layanan pihak ketiga harus ditujukan kepada penyedia terkait.
+
+6. Anak-anak dan dukungan
+Aplikasi tidak meminta usia atau informasi profil khusus anak. Permintaan lokasi dan jaringan bekerja seperti dijelaskan di atas. Jika Anda mengirim email kepada kami, alamat dan pesan Anda diproses hanya untuk menjawab permintaan dukungan.
+
+Privasi, data lokal, dan dukungan: tamvakit.app@gmail.com</div></section></main></body></html>
